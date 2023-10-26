@@ -10,8 +10,8 @@
   /* border: 1px solid black; */
 }
 .mainWrapper > h1{
-    margin-top: 6rem;
     margin-bottom: 2rem;
+    padding: 1.5rem;
 }
 .add-btn{
     background-color: #577BFA;

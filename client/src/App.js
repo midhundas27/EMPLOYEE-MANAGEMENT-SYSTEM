@@ -8,7 +8,7 @@ function App() {
   const [employeeId, setEmployeeId] = useState('')
   console.log(employeeId)
   return (
-    <div className="App">
+    <div className="container">
       <TopNav/>
       <LeftNav employeeId={employeeId}/>
       <MainSection setEmployeeId={setEmployeeId}/>
