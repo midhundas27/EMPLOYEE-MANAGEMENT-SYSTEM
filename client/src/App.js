@@ -9,6 +9,9 @@ function App() {
   console.log(employeeId)
   return (
     <div className="container">
+      <TopNav/>
+      <LeftNav employeeId={employeeId}/>
+      <MainSection setEmployeeId={setEmployeeId}/>
     </div>
   );
 }
