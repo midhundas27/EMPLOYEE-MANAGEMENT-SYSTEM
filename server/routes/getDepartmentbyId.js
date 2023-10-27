@@ -1,4 +1,4 @@
-const employees = await Employees.find({ _id: { $in: department.employeeIds } })
+
 
 const express = require('express')
 const router = express.Router()
