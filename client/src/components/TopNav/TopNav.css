@@ -1,8 +1,9 @@
 .navbar{
     height: 4rem;
-    border-bottom:1px solid rgba(0,0,0,.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
+    background-color: #f1e9da;
 }

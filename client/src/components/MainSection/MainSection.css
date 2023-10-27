@@ -106,9 +106,9 @@
     font-size: 0.8rem;
 }
 .job-role {
-  background-color: #fcfbfe;
+  background-color: #f9429e;
   height: 3rem;
-  color: black;
+  color: white;
   width: max-content;
   border-top: 1px solid rgba(112, 112, 112, 0.1);
   width: 100%;
