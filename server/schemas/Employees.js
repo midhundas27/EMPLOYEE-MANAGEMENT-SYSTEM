@@ -23,7 +23,7 @@ const EmployeeSchema = new mongoose.Schema({
         required: true
     },
     dateofjoining: {
-        type: String,
+        type: Date,
         required: true
     },
     image:{
@@ -33,7 +33,16 @@ const EmployeeSchema = new mongoose.Schema({
     departmentid: {
         type: String,
         required : true
+    },
+    yearsofexperience: {
+        type: Number,
+        required: true,
+    },
+    ismanager :{
+        type: Boolean,
+        required: true
     }
+
     
 })
 
