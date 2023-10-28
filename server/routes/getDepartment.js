@@ -3,7 +3,7 @@ const router = express.Router()
 let Department = require('../schemas/Department')
 
 
-router.get('/', async(req, res)=>{
+router.get('/department', async(req, res)=>{
     try{
         const response = await Department.find()
         res.json(response)

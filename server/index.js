@@ -9,6 +9,14 @@ const updateEmployee = require('./routes/updateEmployee')
 const deleteEmployee = require('./routes/deleteEmployee')
 const getEmployeeById = require('./routes/getEmployeeById')
 const searchEmployee = require('./routes/searchEmployee')
+const promoteEmployee = require('./routes/promoteEmployee')
+
+const createDepartment = require('./routes/createDepartment')
+const deleteDepartment = require('./routes/deleteDepartment')
+const updateDepartment = require('./routes/updateDepartment')
+const getDepartment = require('./routes/getDepartment')
+const getDepartmentbyId = require('./routes/getDepartmentbyId')
+
 const cors = require("cors");
 
 app.use(cors());
@@ -34,6 +42,16 @@ app.use('/employee', updateEmployee)
 app.use('/employee', deleteEmployee)
 app.use('/searchemployee', searchEmployee)
 app.use('/employee', getEmployeeById)
+app.use('/employee',promoteEmployee)
+
+app.use('', createDepartment)
+app.use('', deleteDepartment)
+app.use('', updateDepartment)
+app.use('', getDepartment)
+app.use('',getDepartmentbyId)
+
+
+
 
 
 
