@@ -1,6 +1,6 @@
-body{
+.login-background{
     background-image: url(hack1.jpg);
-    max-height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     background-size: cover;
     font-size: 25px;
@@ -32,7 +32,7 @@ body{
     transition: width 0.4s ease-in-out;
   }
   input[type=text]:focus {
-    width: 40%;
+    width: 35%;
   }
   input[type=submit] {
     width: 30%;
