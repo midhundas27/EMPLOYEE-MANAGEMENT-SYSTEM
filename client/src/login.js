@@ -12,6 +12,8 @@ const Login = () => {
           console.log('Sign In As:', loginAs)}
 
   return (
+    <div className='login-background'>
+      
     <div class="login-container">
       <p className="login-text">Sign In</p><br></br>
       <form onSubmit={handleLoginFormSubmit} class="login-form">
@@ -21,5 +23,6 @@ const Login = () => {
           className="login-password"/><br></br>
         <input type="submit" value="Sign In" className="login-button"/>
       </form>
+    </div>
     </div>)}
 export default Login
