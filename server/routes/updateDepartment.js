@@ -3,7 +3,7 @@ const router = express.Router()
 let Department = require('../schemas/Department')
 
 
-router.put('/:id', async (req, res) => {
+router.put('/department/:id', async (req, res) => {
     try {
         const department = await Department.findByIdAndUpdate(
             req.params.id,

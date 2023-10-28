@@ -14,8 +14,8 @@ router.get('/department/:id', async (req, res) => {
         if (!department) {
             return res.status(404).send('Department not found');
         }
-        const employees = await Employees.find({ departmentId: department._id })
-        departmentData.push(...department,employees)
+        const employees = await Employees.find({ departmentid: req.params.id })
+        departmentData.push({ ...department._doc    , employees })
         res.json(departmentData);
     }
     catch (err) {

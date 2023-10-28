@@ -44,11 +44,11 @@ app.use('/searchemployee', searchEmployee)
 app.use('/employee', getEmployeeById)
 app.use('/employee',promoteEmployee)
 
-app.use('', createDepartment)
-app.use('', deleteDepartment)
-app.use('', updateDepartment)
-app.use('', getDepartment)
-app.use('',getDepartmentbyId)
+app.use('/', createDepartment)
+app.use('/', deleteDepartment)
+app.use('/', updateDepartment)
+app.use('/', getDepartment)
+app.use('/',getDepartmentbyId)
 
 
 
