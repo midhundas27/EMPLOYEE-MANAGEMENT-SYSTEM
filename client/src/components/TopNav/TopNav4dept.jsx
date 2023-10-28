@@ -1,14 +1,13 @@
 import React from 'react'
 import './TopNav4dept.css'
 
-const TopNav = () => {
+const TopNav4dept = () => {
   return (
-    <nav className='navbar'>
-      <div className='header'>
-        <h1>Nav</h1>
+    <nav className='dept-navbar'>
+      <div className='dept-header'>
       </div>
     </nav>
   )
 }
 
-export default TopNav
+export default TopNav4dept
