@@ -19,7 +19,7 @@ export const register = async (req, res) => {
 
     await newUser.save();
 
-    res.status(200).json({ success: true, message: "Successfully created" });
+    res.status(200).json({ success: true, message: "Successfully created!" });
   } catch (err) {
     res
       .status(500)
@@ -38,7 +38,7 @@ export const login = async (req, res) => {
     if (!user) {
       return res
         .status(404)
-        .json({ success: false, message: "User not found" });
+        .json({ success: false, message: "This user is not found" });
     }
 
     //if user exists, then compare
@@ -51,7 +51,7 @@ export const login = async (req, res) => {
     if (!checkCorrectPassword) {
       return res
         .status(401)
-        .json({ success: false, message: "Incorrect email or password" });
+        .json({ success: false, message: "Entered Incorrect email or password" });
     }
 
     const { password, role, ...rest } = user._doc;
