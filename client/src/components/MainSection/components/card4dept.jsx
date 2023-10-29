@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card4dept = () => {
+const Card4dept = (props) => {
 
   return (
     <div className="card4dept-component">
@@ -14,8 +14,8 @@ const Card4dept = () => {
           /> 
         </div>*/}
         <div className="dept-detail">
-          <h3>deptname</h3>
-          <p>email</p>
+          <h3>{props.deptname}</h3>
+          <p>{props.email}</p>
         </div>
       </div>
       <div className="job-dept">
