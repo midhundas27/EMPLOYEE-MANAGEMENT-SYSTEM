@@ -16,10 +16,11 @@ const Card4dept = (props) => {
         <div className="dept-detail">
           <h3>{props.deptname}</h3>
           <p>{props.email}</p>
+          <p>{props.location}</p>
         </div>
       </div>
       <div className="job-dept">
-        <p>job</p>
+        <p>View</p>
       </div>
     </div>
   );
