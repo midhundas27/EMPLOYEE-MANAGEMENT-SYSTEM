@@ -8,9 +8,9 @@ router.put('/promote/:id', async (req, res) => {
     if (!CheckEligibility(Employee)) 
         res.status(500).send("Not Eligible")
     try {
-        const employee = await Employees.updateOne({ _id: ObjectId(req.params.id) },
+        const employee = await Employees.updateOne({ _id: req.params.id },
     {
-        $set: { isManager: true }
+        $set: { ismanager: true }
     }
         )
         if (!employee) {

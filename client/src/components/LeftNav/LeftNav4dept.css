@@ -1,4 +1,4 @@
-.leftNav{
+.leftNav4dept{
     width: 20rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -8,7 +8,7 @@
     top: 0;
     background-image: linear-gradient(#f1e9da, #ffffff, #ffffff);
 }
-.employeeDetail{
+.deptdetail{
     margin: 1rem;
     margin-top: 4rem;
     height: auto;
@@ -17,18 +17,18 @@
     align-items: center;
     gap: 20px;
 }
-.employeeDetail>img{
+.deptdetail>img{
     width: 17rem;
     height: 17rem;
     object-fit: cover;
     border-radius: 50%;
 }
-.employeeDetail > h1{
+.deptdetail > h1{
     font-weight: 500;
 }
-.employeeDetail > h2{
+.deptdetail > h2{
     margin-bottom: 3rem;
 }
-.date{
+.dept-date{
     font-weight: 600;
 }

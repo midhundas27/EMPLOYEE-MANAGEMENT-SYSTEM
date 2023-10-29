@@ -1,15 +1,18 @@
-import { useState } from 'react';
-import LeftNav from './components/LeftNav/LeftNav';
-import MainSection from './components/MainSection/MainSection';
-import TopNav from './components/TopNav/TopNav';
+import React from 'react';
+import './department.css'
+import TopNav4dept from './components/TopNav/TopNav4dept';
+import Card4dept from './components/MainSection/components/card4dept';
 function Department() {
-  const [employeeId, setEmployeeId] = useState('')
-  console.log(employeeId)
   return (
     <div className="dept-container">
-      <TopNav/>
-      <LeftNav employeeId={employeeId}/>
-      <MainSection setEmployeeId={setEmployeeId}/>
+      <TopNav4dept/>
+      <h1 class="dept-text">Departments</h1>
+      <div className="depts">
+      <Card4dept/>
+      <Card4dept/>
+      <Card4dept/>
+      <Card4dept/>
+      </div>
     </div>
   );
 }

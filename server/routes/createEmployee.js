@@ -9,8 +9,8 @@ router.post('/', async(req, res)=>{
         await employee.save()
         res.status(201).send(employee)
     }
-    catch {
-        res.status(500).send('something went wrong')
+    catch (err) {
+        res.status(500).send(err)
     }
 
 })

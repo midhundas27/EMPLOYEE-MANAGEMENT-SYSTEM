@@ -5,7 +5,6 @@ const TopNav = () => {
   return (
     <nav className='navbar'>
       <div className='header'>
-        <h1>Nav</h1>
       </div>
     </nav>
   )
