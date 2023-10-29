@@ -1,29 +1,114 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import './department.css'
-import TopNav4dept from './components/TopNav/TopNav4dept';
-import Card4dept from './components/MainSection/components/card4dept';
+import { BiSearch } from "react-icons/bi";
+import { IoMdAdd } from "react-icons/io";
+import TopNav4dept from '../TopNav/TopNav4dept';
+import Card4dept from "./components/card4dept";
+import ModelPopup4dept from "../ModelPopup/ModelPopup4dept";
+import { axiosGet } from "../../axiosServices";
+import EditDetailsModal4dept from "../ModelPopup/EditDetailsModal4dept";
+import LeftNav4dept from "../LeftNav/LeftNav4dept";
 
-import Finance from './finance';
-import Sales from './sales'
-import Support from './support'
-import Administration from './administration'
+const Department = ({ setdeptId }) => {
+  const [showModal, setShowModal] = useState(false)
+  const [editModal, setEditModal] = useState(false)
+  const [dept, setdept] = useState([])
+  const [deptById, setdeptById] = useState([])
+  const [reRender, setReRender] = useState(false)
 
+  const getAlldept = async () => {
+    try {
+      const res = await axiosGet('/dept')
+      setdept(res.data)
+    }
+    catch (err) {
+      console.log(err)
+    }
+  }
+  const getdeptById = async (id) => {
+    try {
+      const res = await axiosGet(`/dept/${id}`)
+      setdeptById(res.data)
+    }
+    catch (err) {
+      console.log(err)
+    }
+  }
+  const handleSearch = async (e) => {
+    try {
+      const res = await axiosGet(`/searchdept/${e.target.value}`)
+      setdept(res.data)
+    }
+    catch (err) {
+      console.log(err.message)
+    }
+  } 
+  const handleEdit = async (id) => {
+    getdeptById(id)
+    setEditModal(true)
+  }
+  const handleReRender = () => {
+    setReRender(true)
+  }
 
-
-function Department() {
+  useEffect(() => {
+    getAlldept()
+  }, [showModal, editModal, reRender])
   return (
-    <div className="dept-container">
-      <TopNav4dept/>
-      <h1 class="dept-text">Departments</h1>
-      <div className="depts">
-
-      <Card4dept deptname="Finance" email="finace@gmail.com" location="Kozhikode" logo="" deptid={<Finance/>} />
-      <Card4dept deptname="Adminstration" email="adminstrate@gmail.com" location="Kozhikode" logo="" deptid={<Administration/>} />
-      <Card4dept deptname="Sales" email="sales@gmail.com" location="Kozhikode" logo="" deptid={<Sales/>} />
-      <Card4dept deptname="Support" email="support@gmail.com" location="Kozhikode" logo="" deptid={<Support/>} />
-
-      </div>
-    </div>
+    <>
+      {
+        showModal && <ModelPopup4dept setShowModal={setShowModal} />
+      }
+      {
+        editModal && <EditDetailsModal4dept setEditModal={setEditModal} deptById={deptById} />
+      }
+    <main className="dept-container">
+    <TopNav4dept/>
+    <LeftNav4dept deptById={deptById}/>
+        <div className="dept-wrapper">
+          <h1>
+            Departments  <span className="dept-count">{dept.length}</span>
+          </h1>
+          <div className="dept-header">
+            <div className="searchBox">
+              <input
+                type="text"
+                placeholder="Search by name, email, location, etc"
+                onChange={handleSearch}
+              />
+              <BiSearch size={20} />
+            </div>
+            <button className="add-btn"
+              onClick={() => setShowModal(true)}
+            ><IoMdAdd size="20" color="#fffff" />Create Department</button>
+          </div>
+          <div className="dept">
+            {
+              dept && dept.map((emp) => {
+                return <div key={emp._id} onClick={() => setdeptId(emp._id)}>
+                  <Card4dept
+                  empData={emp}
+                  handleEdit={handleEdit}
+                  handleReRender={handleReRender}/>
+                  <Card4dept
+                  empData={emp}
+                  handleEdit={handleEdit}
+                  handleReRender={handleReRender}/>
+                  <Card4dept
+                  empData={emp}
+                  handleEdit={handleEdit}
+                  handleReRender={handleReRender}/>
+                  <Card4dept
+                  empData={emp}
+                  handleEdit={handleEdit}
+                  handleReRender={handleReRender}/>
+                </div>
+              })
+            }
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
 
