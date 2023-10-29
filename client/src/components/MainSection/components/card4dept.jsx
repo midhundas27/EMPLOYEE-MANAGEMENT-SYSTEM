@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const Card4dept = (props) => {
 
@@ -20,7 +21,7 @@ const Card4dept = (props) => {
         </div>
       </div>
       <div className="job-dept">
-        <p>View</p>
+        <Link to={props.deptid}>View</Link>
       </div>
     </div>
   );
