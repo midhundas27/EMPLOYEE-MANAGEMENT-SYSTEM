@@ -9,10 +9,10 @@ function Department() {
       <TopNav4dept/>
       <h1 class="dept-text">Departments</h1>
       <div className="depts">
-      <Card4dept deptname="Finance" email="finace@gmail.com" location="Kozhikode" logo="" onclk=""/>
-      <Card4dept deptname="Adminstration" email="adminstrate@gmail.com" location="Kozhikode" logo="" onclk=""/>
-      <Card4dept deptname="Sales" email="sales@gmail.com" location="Kozhikode" logo="" onclk=""/>
-      <Card4dept deptname="Support" email="support@gmail.com" location="Kozhikode" logo="" onclk=""/>
+      <Card4dept deptname="Finance" email="finace@gmail.com" location="Kozhikode" logo=""/>
+      <Card4dept deptname="Adminstration" email="adminstrate@gmail.com" location="Kozhikode" logo=""/>
+      <Card4dept deptname="Sales" email="sales@gmail.com" location="Kozhikode" logo=""/>
+      <Card4dept deptname="Support" email="support@gmail.com" location="Kozhikode" logo=""/>
       </div>
     </div>
   );
