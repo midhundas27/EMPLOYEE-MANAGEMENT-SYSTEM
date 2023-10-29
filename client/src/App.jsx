@@ -3,7 +3,7 @@ import {Routes, Route, Navigate} from 'react-router-dom';
 import './App.css';
 import Login from './login';
 import Home from './home';
-import Department from './department';
+import Department from './components/MainSection/department';
 import Finance from './finance';
 import Administration from './administration';
 import Sales from './sales';
