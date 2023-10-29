@@ -22,10 +22,7 @@ function Department() {
       <Card4dept deptname="Sales" email="sales@gmail.com" location="Kozhikode" logo="" deptid={<Sales/>} />
       <Card4dept deptname="Support" email="support@gmail.com" location="Kozhikode" logo="" deptid={<Support/>} />
 =======
-      <Card4dept deptname="Finance" email="finace@gmail.com" location="Kozhikode" logo=""/>
-      <Card4dept deptname="Adminstration" email="adminstrate@gmail.com" location="Kozhikode" logo=""/>
-      <Card4dept deptname="Sales" email="sales@gmail.com" location="Kozhikode" logo=""/>
-      <Card4dept deptname="Support" email="support@gmail.com" location="Kozhikode" logo=""/>
+      
 >>>>>>> ef0d19ef53201b1c01d05ca3fe2fd71b3bdccf59
       </div>
     </div>
