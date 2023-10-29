@@ -10,7 +10,7 @@ router.delete('/:id', async (req, res) => {
         if (!employee) {
             return res.status(404).send('Employee not found');
         }
-        res.send('Employee deleted');
+        res.send('Employee deleted successfully');
     } catch (err) {
         console.error(err);
     }
