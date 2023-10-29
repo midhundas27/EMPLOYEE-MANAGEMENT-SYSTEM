@@ -42,7 +42,7 @@ const Department = ({ setdeptId }) => {
     catch (err) {
       console.log(err.message)
     }
-  } //jhugugug
+  } 
   const handleEdit = async (id) => {
     getdeptById(id)
     setEditModal(true)
