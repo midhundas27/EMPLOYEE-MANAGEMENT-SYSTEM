@@ -1,19 +1,75 @@
-.main4dept-Container {
-    margin-left: 19rem;
-    margin-top: 4rem;
+.dept-container{
     background-color: #ffe5ec;
-    /* border: 1px solid #ff0000; */
-  }
-  .main4dept-Wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
     height: 100vh;
-    /* border: 1px solid black; */
+    margin: 4rem 0px 0px 17%;
+}
+
+.dept-wrapper > h1{
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+.depts{
+    margin: 200px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.card4dept-component {
+    background-color: white;
+    width: 15%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 7px;
+    overflow: hidden;
   }
-  .main4dept-Wrapper > h1{
-      margin-bottom: 2rem;
-      padding: 1.5rem;
+  .card4dept-inner {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  .card4dept-component:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  /* .profileImage {
+    display: grid;
+    place-items: center;
+  }
+  .profileImage > img {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+  } */
+  .dept-detail {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .dept-detail > h3{
+      color: #373852;
+  }
+  .dept-detail > p{
+      margin-top: 5px;
+      color: #B3B4C0;
+      font-size: 0.8rem;
+  }
+  .job-dept {
+    background-color: #f9429e;
+    height: 3rem;
+    color: white;
+    width: max-content;
+    border-top: 1px solid rgba(112, 112, 112, 0.1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    
+  }
+
   .add-btn{
       background-color: #577BFA;
       border: none;
@@ -26,10 +82,10 @@
       align-items:center ;
       gap: 5px;
   }
-  .deptHeader {
+  .dept-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .dept-count{
       color: #b5b5b5;
@@ -67,26 +123,7 @@
     grid-gap: 25px;
   }
   
-  .card-component {
-    background-color: white;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    border-radius: 7px;
-    overflow: hidden;
-  }
-  .card-inner {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card-component:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  }
+
   .profileImage {
     display: grid;
     place-items: center;
@@ -109,7 +146,7 @@
       color: #B3B4C0;
       font-size: 0.8rem;
   }
-  .job-role {
+  .job-dept {
     background-color: #f9429e;
     height: 3rem;
     color: white;

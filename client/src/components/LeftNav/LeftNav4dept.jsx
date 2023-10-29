@@ -22,7 +22,7 @@ const LeftNav4dept = ({ deptId }) => {
   return (
     <nav className='leftNav4dept'>
       <div className="deptdetail">
-        <h2>Full Detail</h2>
+        <h2>Full Details</h2>
         <img src={deptById.image}/>
         <h1>{deptById.firstname} {deptById.lastname}</h1>
         <p>{deptById.email}</p>
