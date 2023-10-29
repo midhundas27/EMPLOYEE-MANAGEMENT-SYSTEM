@@ -2,7 +2,7 @@ import User from "../models/user";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-/* User Registration
+ //User Registration
 export const register = async (req, res) => {
   try {
     //hashing password
@@ -25,7 +25,7 @@ export const register = async (req, res) => {
       .status(500)
       .json({ success: false, message: "Failed to create. Please try again" });
   }
-}; */
+}; 
 
 //User Login
 export const login = async (req, res) => {
