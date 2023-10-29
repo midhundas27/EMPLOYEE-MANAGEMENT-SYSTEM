@@ -14,6 +14,7 @@ const Card4dept = (props) => {
           /> 
         </div>*/}
         <div className="dept-detail">
+          <img src={props.logo}/>
           <h3>{props.deptname}</h3>
           <p>{props.email}</p>
           <p>{props.location}</p>
