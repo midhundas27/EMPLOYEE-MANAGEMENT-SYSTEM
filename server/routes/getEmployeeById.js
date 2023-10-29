@@ -14,7 +14,7 @@ router.get('/:id', async (req, res) => {
     }
     catch (err) {
         console.error(err);
-        res.status(500).send(`Error updating employee: ${err.message}`);
+        res.status(500).send(`Error in the updating employee details: ${err.message}`);
     }
 
 })
