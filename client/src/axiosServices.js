@@ -30,3 +30,17 @@ export const axiosPut = (url, data) =>{
         }
     })
 }
+
+// Create an Axios instance with a custom configuration
+export const createAxiosWithToken = () => {
+    const token = localStorage.getItem('token');
+    
+    return axios.create({
+      baseURL: `${baseURL}`, // Your server's URL
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  };
+  
