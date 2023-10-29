@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import LeftNav from './components/LeftNav/LeftNav';
 import TopNav4dept from './components/TopNav/TopNav4dept';
-import MainSection from './components/MainSection/MainSection';
+import LeftNav4dept from './components/LeftNav/LeftNav4dept';
+import MainSection4dept from './components/MainSection/MainSection4dept';
 function Finance() {
   const [employeeId, setEmployeeId] = useState('')
   console.log(employeeId)
   return (
     <div className="finance-container">
       <TopNav4dept/>
-      <LeftNav employeeId={employeeId}/>
-      <MainSection setEmployeeId={setEmployeeId}/>
+      <LeftNav4dept employeeId={employeeId}/>
+      <MainSection4dept setEmployeeId={setEmployeeId}/>
     </div>
   );
 }

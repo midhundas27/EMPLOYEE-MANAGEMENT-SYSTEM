@@ -1,0 +1,34 @@
+.leftNav4dept{
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(#f1e9da, #ffffff, #ffffff);
+}
+.deptdetail{
+    margin: 1rem;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.deptdetail>img{
+    width: 17rem;
+    height: 17rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.deptdetail > h1{
+    font-weight: 500;
+}
+.deptdetail > h2{
+    margin-bottom: 3rem;
+}
+.dept-date{
+    font-weight: 600;
+}
