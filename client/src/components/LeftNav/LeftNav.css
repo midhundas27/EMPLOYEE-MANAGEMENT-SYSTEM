@@ -1,11 +1,12 @@
 .leftNav{
     width: 20rem;
-    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
-    background-color: white;
+    background-image: linear-gradient(#f1e9da, #ffffff, #ffffff);
 }
 .employeeDetail{
     margin: 1rem;
