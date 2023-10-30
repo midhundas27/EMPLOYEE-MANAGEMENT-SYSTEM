@@ -90,18 +90,6 @@ const Department = ({ setdeptId }) => {
                   empData={emp}
                   handleEdit={handleEdit}
                   handleReRender={handleReRender}/>
-                  <Card4dept
-                  empData={emp}
-                  handleEdit={handleEdit}
-                  handleReRender={handleReRender}/>
-                  <Card4dept
-                  empData={emp}
-                  handleEdit={handleEdit}
-                  handleReRender={handleReRender}/>
-                  <Card4dept
-                  empData={emp}
-                  handleEdit={handleEdit}
-                  handleReRender={handleReRender}/>
                 </div>
               })
             }
