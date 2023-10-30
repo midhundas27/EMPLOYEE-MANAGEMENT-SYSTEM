@@ -10,7 +10,7 @@ const EditDetailsModal4dept = ({ deptById, setEditModal }) => {
     const handleEdit = async (values) => {
         setLoading(true)
         try {
-            const res = await axiosPut(`/dept/${deptById._id}`, values)
+            const res = await axiosPut(`/department/${deptById._id}`, values)
             setLoading(false)
             setEditModal(false)
             console.log(res)

@@ -12,7 +12,7 @@ const ModelPopup4dept = ({ setShowModal }) => {
   const createdept = async (values) => {
     setLoading(true)
     try{
-      const res = await axiosPost('/dept', values)
+      const res = await axiosPost('/department', values)
       console.log(res)
       setLoading(false)
       setShowModal(false)
@@ -61,7 +61,6 @@ const ModelPopup4dept = ({ setShowModal }) => {
               <div className="input-box">
                 <label htmlFor="">Manager Id</label>
                 <input type="number" name="managerid"
-                  required
                   onChange={formik.handleChange}
                   values={formik.values.managerid}
                 />

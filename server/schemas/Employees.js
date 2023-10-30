@@ -28,7 +28,7 @@ const EmployeeSchema = new mongoose.Schema({
     },
     image:{
         type: String,
-        required: true
+       
     },
     departmentid: {
         type: String,
