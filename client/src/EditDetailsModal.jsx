@@ -4,7 +4,7 @@ import "./ModelPopup.css";
 import { axiosPut } from "./axiosServices";
 
 const EditDetailsModal = ({ empById, setEditModal }) => {
-    const { firstname, lastname, email, phone, job, dateofjoining, image } = empById
+    const { firstname, lastname, email, phone, job, dateofjoining, image, yearsofexperience } = empById
     //const date = new Date(dateofjoining)
     const [loading, setLoading] = useState(false)
     const handleEdit = async (values) => {
@@ -29,6 +29,7 @@ const EditDetailsModal = ({ empById, setEditModal }) => {
             job,
             dateofjoining,
             image,
+            yearsofexperience
         },
         onSubmit: values => {
             handleEdit(values)
@@ -70,7 +71,7 @@ const EditDetailsModal = ({ empById, setEditModal }) => {
                         </div>
                         <div className="input-box">
                                 <label htmlFor="">Image</label>
-                                <input type="text" name="lastname"
+                                <input type="file" name="image"
                                     required
                                     defaultValue={image}
                                     onChange={formik.handleChange}
@@ -90,7 +91,7 @@ const EditDetailsModal = ({ empById, setEditModal }) => {
                             </div>
                             <div className="input-box">
                                 <label htmlFor="">Phone</label>
-                                <input type="text" name="phone"
+                                <input type="number" name="phone"
                                     required
                                     defaultValue={phone}
                                     onChange={formik.handleChange}
@@ -99,7 +100,7 @@ const EditDetailsModal = ({ empById, setEditModal }) => {
                             </div>
                         </div>
                         <div className="input-box">
-                            <label htmlFor="">Job-position</label>
+                            <label htmlFor="">Job Position</label>
                             <input type="text" name="job"
                                 required
                                 defaultValue={job}
@@ -114,6 +115,15 @@ const EditDetailsModal = ({ empById, setEditModal }) => {
                                 defaultValue={dateofjoining}
                                 onChange={formik.handleChange}
                                 values={formik.values.dateofjoining}
+                            />
+                        </div>
+                        <div className="input-box">
+                            <label htmlFor="">Years of Experience</label>
+                            <input type="number" name="yearsofexperience"
+                                required
+                                defaultValue={yearsofexperience}
+                                onChange={formik.handleChange}
+                                values={formik.values.yearsofexperience}
                             />
                         </div>
                     </div>

@@ -40,7 +40,6 @@ const EmployeeSchema = new mongoose.Schema({
     },
     ismanager :{
         type: Boolean,
-        required: true
     }
 
     

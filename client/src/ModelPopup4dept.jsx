@@ -60,7 +60,7 @@ const ModelPopup4dept = ({ setShowModal }) => {
               </div>
               <div className="input-box">
                 <label htmlFor="">Manager Id</label>
-                <input type="text" name="managerid"
+                <input type="number" name="managerid"
                   required
                   onChange={formik.handleChange}
                   values={formik.values.managerid}
@@ -68,7 +68,7 @@ const ModelPopup4dept = ({ setShowModal }) => {
               </div>
             </div>
             <div className="input-box">
-                <label htmlFor="">image</label>
+                <label htmlFor="">Image</label>
                 <input type="file" name="image"
                   required
                   onChange={formik.handleChange}

@@ -90,7 +90,7 @@ const ModelPopup = ({ setShowModal }) => {
               </div>
               <div className="input-box">
                 <label htmlFor="">Phone</label>
-                <input type="text" name="phone"
+                <input type="number" name="phone"
                   required
                   onChange={formik.handleChange}
                   values={formik.values.phone}
@@ -99,7 +99,7 @@ const ModelPopup = ({ setShowModal }) => {
               
             </div>
             <div className="input-box">
-              <label htmlFor="">Job-position</label>
+              <label htmlFor="">Job Position</label>
               <input type="text" name="job"
                 required
                 onChange={formik.handleChange}
@@ -112,6 +112,14 @@ const ModelPopup = ({ setShowModal }) => {
                 required
                 onChange={formik.handleChange}
                 values={formik.values.dateofjoining}
+              />
+            </div>
+            <div className="input-box">
+              <label htmlFor="">Years of Experience</label>
+              <input type="number" name="yearsofexperience"
+                required
+                onChange={formik.handleChange}
+                values={formik.values.yearsofexperience}
               />
             </div>
             <div className="modalFooter">

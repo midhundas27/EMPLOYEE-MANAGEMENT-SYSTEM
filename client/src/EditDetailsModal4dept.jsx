@@ -58,7 +58,7 @@ const EditDetailsModal4dept = ({ deptById, setEditModal }) => {
                             </div>
                             <div className="input-box">
                                 <label htmlFor="">Manager Id</label>
-                                <input type="text" name="managerid"
+                                <input type="number" name="managerid"
                                     required
                                     defaultValue={managerid}
                                     onChange={formik.handleChange}
@@ -68,7 +68,7 @@ const EditDetailsModal4dept = ({ deptById, setEditModal }) => {
                         </div>
                         <div className="input-box">
                                 <label htmlFor="">Image</label>
-                                <input type="text" name="lastname"
+                                <input type="file" name="lastname"
                                     required
                                     defaultValue={image}
                                     onChange={formik.handleChange}
