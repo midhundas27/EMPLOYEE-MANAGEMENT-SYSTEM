@@ -21,7 +21,10 @@ const checkManager = require('./routes/CheckManager')
 const cors = require("cors");
 
 app.use(cors({
-  origin: '*',
+  origin: 'https://employee-management-system-beta.vercel.app', // Allow requests from this specific origin
+  // You can specify more origins if needed, such as an array of allowed domains.
+  // origin: ['https://domain1.com', 'https://domain2.com'],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 }));
 
 mongoose.connect(process.env.URL, {
