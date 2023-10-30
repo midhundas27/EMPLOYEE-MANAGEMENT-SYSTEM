@@ -85,6 +85,7 @@ const Department = ({ setdeptId }) => {
           <div className="dept">
             {
               dept && dept.map((emp) => {
+                console.log(emp)
                 return <div key={emp._id} onClick={() => setdeptId(emp._id)}>
                   <Card4dept
                   empData={emp}
