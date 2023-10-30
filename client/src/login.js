@@ -10,7 +10,7 @@ const Login = () => {
         const handleLoginFormSubmit = (event) => {     // Handle sign-in logic
           event.preventDefault()
           if(username==="employee" && password==="12345"){
-            navigate("/home")
+            navigate("/department")
           }
           console.log('Sign In Form Submitted')
           // console.log('Sign In As:', loginAs)
