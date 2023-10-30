@@ -6,6 +6,7 @@ let Department = require('../schemas/Department')
 router.get('/department', async(req, res)=>{
     try{
         const response = await Department.find()
+        console.log(response)
         res.json(response)
     }
     catch(err){
