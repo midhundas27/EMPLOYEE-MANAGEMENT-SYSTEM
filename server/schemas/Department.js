@@ -8,6 +8,14 @@ const DepartmentSchema = new mongoose.Schema({
     managerid: {
         type: String,
     },
+    email: {
+        type: String,
+        required: true
+    },
+    image:{
+        type: String,
+        required: true
+    },
     location: {
         type: String,
         required: true

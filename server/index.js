@@ -16,6 +16,7 @@ const deleteDepartment = require('./routes/deleteDepartment')
 const updateDepartment = require('./routes/updateDepartment')
 const getDepartment = require('./routes/getDepartment')
 const getDepartmentbyId = require('./routes/getDepartmentbyId')
+const checkManager = require('./routes/CheckManager')
 
 const cors = require("cors");
 
@@ -48,7 +49,9 @@ app.use('/', createDepartment)
 app.use('/', deleteDepartment)
 app.use('/', updateDepartment)
 app.use('/', getDepartment)
-app.use('/',getDepartmentbyId)
+app.use('/', getDepartmentbyId)
+app.use('/',checkManager)
+
 
 
 
