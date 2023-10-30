@@ -27,7 +27,7 @@ const Department = ({ setdeptId }) => {
   }
   const getdeptById = async (id) => {
     try {
-      const res = await axiosGet(`/departmentt/${id}`)
+      const res = await axiosGet(`/department/${id}`)
       setdeptById(res.data)
     }
     catch (err) {

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = "https://fuzzy-raincoat-eel.cyclic.app/"
+const baseURL = "https://fuzzy-raincoat-eel.cyclic.app"
 
 export const axiosGet = (url) =>{
     return axios.get(`${baseURL}${url}`, {

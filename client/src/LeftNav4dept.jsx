@@ -8,7 +8,7 @@ const LeftNav4dept = ({ deptId }) => {
 
   const getdeptById = async () => {
     try {
-      const res = await axiosGet(`/deptloyee/${deptId}`)
+      const res = await axiosGet(`/department/${deptId}`)
       setdeptById(res.data)
     }
     catch (err) {
