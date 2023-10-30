@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { axiosDelete } from "../../../axiosServices";
+import { axiosDelete } from "./axiosServices";
 
 const Card = ({ empData, handleEdit, handleReRender}) => {
   const { firstname, lastname, job, email, image } = empData

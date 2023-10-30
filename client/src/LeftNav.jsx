@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './LeftNav.css'
-import { axiosGet } from '../../axiosServices'
+import { axiosGet } from './axiosServices'
 
 const LeftNav = ({ employeeId }) => {
   const [empById, setEmpById] = useState([])

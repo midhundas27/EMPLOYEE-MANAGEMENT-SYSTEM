@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import TopNav4dept from './components/TopNav/TopNav4dept';
-import MainSection from './components/MainSection/MainSection';
-import LeftNav from './components/LeftNav/LeftNav';
+import TopNav4dept from './TopNav4dept';
+import MainSection from './MainSection';
+import LeftNav from './LeftNav';
 function Sales() {
   const [employeeId, setEmployeeId] = useState('')
   console.log(employeeId)

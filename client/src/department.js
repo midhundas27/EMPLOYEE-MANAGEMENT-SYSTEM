@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import './department.css'
 import { BiSearch } from "react-icons/bi";
 import { IoMdAdd } from "react-icons/io";
-import TopNav4dept from '../TopNav/TopNav4dept';
-import Card4dept from "./components/card4dept";
-import ModelPopup4dept from "../ModelPopup/ModelPopup4dept";
-import { axiosGet } from "../../axiosServices";
-import EditDetailsModal4dept from "../ModelPopup/EditDetailsModal4dept";
-import LeftNav4dept from "../LeftNav/LeftNav4dept";
+import TopNav4dept from './TopNav4dept.jsx';
+import Card4dept from "./card4dept.jsx";
+import ModelPopup4dept from "./ModelPopup4dept.jsx";
+import { axiosGet } from "./axiosServices.js";
+import EditDetailsModal4dept from "./EditDetailsModal4dept.jsx";
+import LeftNav4dept from "./LeftNav4dept.jsx";
 
 const Department = ({ setdeptId }) => {
   const [showModal, setShowModal] = useState(false)

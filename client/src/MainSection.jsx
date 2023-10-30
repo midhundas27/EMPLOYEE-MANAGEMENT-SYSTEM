@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./MainSection.css";
 import { BiSearch } from "react-icons/bi";
 import { IoMdAdd} from "react-icons/io";
-import Card from "./components/Card";
-import ModelPopup from "../ModelPopup/ModelPopup";
-import { axiosGet } from "../../axiosServices";
-import EditDetailsModal from "../ModelPopup/EditDetailsModal";
+import Card from "./Card";
+import ModelPopup from "./ModelPopup";
+import { axiosGet } from "./axiosServices";
+import EditDetailsModal from "./EditDetailsModal";
 
 const MainSection = ({ setEmployeeId }) => {
   const [showModal, setShowModal] = useState(false)

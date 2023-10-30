@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ModelPopup.css";
 import { useFormik } from 'formik'
-import { axiosPost } from "../../axiosServices";
+import { axiosPost } from "./axiosServices";
 // import ImageUpload from "./ImageUpload";
 
 const ModelPopup = ({ setShowModal }) => {
@@ -43,6 +43,7 @@ const ModelPopup = ({ setShowModal }) => {
       <div className="modalBox">
         <div className="modalHeader">
           <h2>New Employee Details</h2>
+          <button id="close-button" class="close-button" onClick={() => setShowModal(false)}>X</button>
         </div>
         {/* <ImageUpload setImageURL={setImageURL}/> */}
         
@@ -50,6 +51,7 @@ const ModelPopup = ({ setShowModal }) => {
 
           >
             <div className="input-container">
+            
               <div className="input-box">
                 <label htmlFor="">First Name</label>
                 <input type="text" name="firstname"

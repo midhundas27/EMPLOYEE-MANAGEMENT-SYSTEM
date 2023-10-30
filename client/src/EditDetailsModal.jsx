@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useFormik } from 'formik'
 import "./ModelPopup.css";
-import { axiosPut } from "../../axiosServices";
+import { axiosPut } from "./axiosServices";
 
 const EditDetailsModal = ({ empById, setEditModal }) => {
     const { firstname, lastname, email, phone, job, dateofjoining, image } = empById
