@@ -8,7 +8,7 @@ const DepartmentSchema = new mongoose.Schema({
     managerid: {
         type: String,
     },
-    email: {
+    departmentemail: {
         type: String,
         required: true
     },

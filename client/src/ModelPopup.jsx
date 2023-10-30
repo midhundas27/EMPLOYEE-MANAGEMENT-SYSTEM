@@ -30,7 +30,8 @@ const ModelPopup = ({ setShowModal }) => {
       phone: '',
       job: '',
       dateofjoining: '',
-      image: ''
+      image: '',
+      yearsofexperience: '',
     },
     onSubmit: values => {
       createEmployee(values)
