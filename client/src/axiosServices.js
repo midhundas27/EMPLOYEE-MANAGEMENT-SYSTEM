@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = `http://localhost:3100`
+const baseURL = `mongodb+srv://pvedanth2:NgVnx8rvqlJ53FQz@cluster0.4a9wfhn.mongodb.net/?retryWrites=true&w=majority`
 
 export const axiosGet = (url) =>{
     return axios.get(`${baseURL}${url}`, {
