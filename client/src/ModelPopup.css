@@ -65,3 +65,10 @@ label{
 .input-box > input:focus{
     outline: none;
 }
+.close-button {
+    margin: -75px 25px 0px auto;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}

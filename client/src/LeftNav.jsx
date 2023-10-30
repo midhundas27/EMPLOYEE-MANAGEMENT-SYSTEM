@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './LeftNav.css'
-import { axiosGet } from '../../axiosServices'
+import { axiosGet } from './axiosServices'
 
 const LeftNav = ({ employeeId }) => {
   const [empById, setEmpById] = useState([])
@@ -22,7 +22,7 @@ const LeftNav = ({ employeeId }) => {
   return (
     <nav className='leftNav'>
       <div className="employeeDetail">
-        <h2>Full Detail</h2>
+        <h2>Full Details</h2>
         <img src={empById.image}/>
         <h1>{empById.firstname} {empById.lastname}</h1>
         <p>{empById.email}</p>

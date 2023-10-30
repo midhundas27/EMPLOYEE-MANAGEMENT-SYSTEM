@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import LeftNav from './LeftNav';
+import TopNav4dept from './TopNav4dept';
 import MainSection from './MainSection';
-import TopNav from './TopNav';
-function Home() {
+import LeftNav from './LeftNav';
+function Support() {
   const [employeeId, setEmployeeId] = useState('')
   console.log(employeeId)
   return (
-    <div className="home-container">
-      <TopNav/>
+    <div className="support-container">
+      <TopNav4dept/>
       <LeftNav employeeId={employeeId}/>
       <MainSection setEmployeeId={setEmployeeId}/>
     </div>
   );
 }
-export default Home;
+export default Support;
