@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = `mongodb+srv://pvedanth2:NgVnx8rvqlJ53FQz@cluster0.4a9wfhn.mongodb.net/?retryWrites=true&w=majority`
+const baseURL = "https://fuzzy-raincoat-eel.cyclic.app/"
 
 export const axiosGet = (url) =>{
     return axios.get(`${baseURL}${url}`, {
