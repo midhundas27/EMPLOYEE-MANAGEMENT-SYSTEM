@@ -20,7 +20,9 @@ const checkManager = require('./routes/CheckManager')
 
 const cors = require("cors");
 
-app.use(cors());
+app.use(cors({
+  origin: '*',
+}));
 
 mongoose.connect(process.env.URL, {
     useNewUrlParser: true,
