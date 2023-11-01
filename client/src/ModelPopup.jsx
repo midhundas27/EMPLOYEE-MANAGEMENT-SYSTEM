@@ -123,7 +123,7 @@ const ModelPopup = ({ setShowModal }) => {
               />
             </div>
             <div className="modalFooter">
-              <button className="add-btn" type="submit">{loading ? 'Saving...' : 'Save Details'}</button> //submit-button
+              <button className="add-btn" type="submit">{loading ? 'Saving...' : 'Save Details'}</button> 
             </div>
 
           </div>
