@@ -80,7 +80,7 @@ const Department = ({ setdeptId }) => {
             </div>
             <button className="add-btn"
               onClick={() => setShowModal(true)}
-            ><IoMdAdd size="20" color="#fffff" />Create Department</button> //dept button
+            ><IoMdAdd size="20" color="#fffff" />Create Department</button> 
           </div>
           <div className="dept">
             {
